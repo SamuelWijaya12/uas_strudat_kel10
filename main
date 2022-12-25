@@ -65,10 +65,7 @@ void daftarantrian(node *head){
         printf("                   ANTRIAN KOSOSNG						 \n");
     } 
     else{
-        printf("        ====================================\n");
-        printf("        ||                                ||\n");
-        printf("        ||          [DAFTAR ANTRIAN]      ||\n");
-        printf("        ||                                ||\n");
+        printf("                  [DAFTAR ANTRIAN]      \n");
         printf("        ====================================\n");
  
         while(pWalker != NULL){
