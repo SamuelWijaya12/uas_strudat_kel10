@@ -25,21 +25,24 @@ void login(node **head){
 	noantrian++;
 	
 	fflush(stdin);
-    pNew->noantrian = noantrian;
+	pNew->noantrian = noantrian;
 
-		printf("Nama : ");
-		gets(pNew->nama);
-		
-		printf("NPM: ");
-        scanf("%s", &pNew->npm);     
-		
+	fflush(stdin);
+	printf("Nama : ");
+	gets(pNew->nama);
+	
+	fflush(stdin);	
+	printf("NPM: ");
+        gets(pNew->npm);     
+	
+	fflush(stdin);	
     	printf("Fakultas : ");
-    	scanf("%s", &pNew->fakultas);
-    	
+    	gets(pNew->fakultas);
+  
+  	fflush(stdin);
     	printf("Program Studi : ");
-    	scanf("%s", &pNew->prodi);
+    	gets(pNew->prodi);
 
-    	
     	pNew->next = NULL;
     	if(*head == NULL){
         	*head = pNew;
@@ -65,7 +68,7 @@ void daftarantrian(node *head){
         printf("                   ANTRIAN KOSOSNG						 \n");
     } 
     else{
-        printf("                  [DAFTAR ANTRIAN]      \n");
+        printf("                    [DAFTAR ANTRIAN]      \n");
         printf("        ====================================\n");
  
         while(pWalker != NULL){
