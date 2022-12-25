@@ -72,15 +72,13 @@ void daftarantrian(node *head){
         printf("        ====================================\n");
  
         while(pWalker != NULL){
-        	printf("                          || \n");
-			printf("                          || \n");
     		printf("        ------------------------------------\n");
-			printf("        | Nomor Antrian : %d\n", pWalker->noantrian);
-			printf("        | Nama            : %s\n", pWalker->nama);
-			printf("        | NPM             : %s\n", pWalker->npm);
-			printf("        | Fakultas        : %s\n", pWalker->fakultas);
-			printf("        | Program Studi   : %s\n", pWalker->prodi);
-			printf("        ------------------------------------\n");        	
+		printf("        | Nomor Antrian : %d\n", pWalker->noantrian);
+		printf("        | Nama            : %s\n", pWalker->nama);
+		printf("        | NPM             : %s\n", pWalker->npm);
+		printf("        | Fakultas        : %s\n", pWalker->fakultas);
+		printf("        | Program Studi   : %s\n", pWalker->prodi);
+		printf("        ------------------------------------\n");        	
             pWalker = pWalker->next;
         }
     }
