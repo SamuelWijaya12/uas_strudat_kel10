@@ -129,6 +129,7 @@ int main()
 		if (select==1){
 			login(&head);
 			system("cls");
+			system("PAUSE");
 			printf("Data Berhasil di Inputkan");
 		}else if(select==2){
 			daftarantrian(head);
