@@ -4,7 +4,7 @@
 #include<unistd.h>
 #include<string.h>
 .
-.
+..
 
 struct node{
 	int noantrian;
