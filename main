@@ -84,9 +84,39 @@ void daftarantrian(node *head){
     }
 } 
 
-void ambilktm{
+void ambilbuku (){
+	struct node *temp;
 	
+	temp = front;
+	front = front->next;
+	if(front == NULL){
+	rear = NULL;
+	}
+	free(temp);
 }
+
+int belibuku(){
+	struct node *temp;
+	int buku;
+	
+	if(isEmptystack()){
+		printf("\nSTOK HABIS!\n\n");
+		system("PAUSE");
+	} else if (isEmptyqueue()){
+		printf("\nMasuk Ke Antrian Dan Lakukan Pendaftaran Terlebih Dahulu\n\n");
+		system("PAUSE");
+	}else{
+		ambilbuku();
+		
+		temp = top;
+		buku = top->stok;
+		top = top->next;
+		free(temp);
+		temp = NULL;
+	}	
+	return buku;	
+}
+
 int count(struct node *head)
 {
 	int count = 0;
