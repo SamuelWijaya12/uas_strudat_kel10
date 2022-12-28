@@ -33,6 +33,34 @@ int countstack(){
 	return count;
 }
 
+int isEmptyqueue(){
+	if(front == NULL){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+int isEmptystack(){
+	if(top == NULL){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+int isFullstack(){
+	int pos;
+	pos = countstack();
+	if(pos == max){
+		return true;
+	}else{
+		return false;
+	}
+}
+
 void ambilbuku (){
 	struct node *temp;
 	
@@ -81,4 +109,37 @@ void cekstok(){
 		}
 		printf("\t---------\n");
 	}
+}
+
+if (select==0){
+			exit;
+		}else if(select==1){
+			masuk();
+			
+			system("cls");
+			printf("DATA BERHASIL DI INPUTKAN\n");
+			
+			system("PAUSE");
+		}else if(select==2){
+			fflush(stdin);
+			cekantrian();
+			fflush(stdin);
+			
+			countqueue();
+			system("PAUSE");
+		}else if(select==3){
+			belibuku();
+		}else if(select==4){
+			cekstok();
+			countstack();
+			system("PAUSE");
+		}else if (select==5){
+			tambahstok();
+	        system("cls");
+		}
+		else{
+			printf("\nERR : PILIHAN TIDAK DITEMUKAN\n");
+			system("PAUSE");		
+		}
+	}while(select!=0);
 }
