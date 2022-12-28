@@ -45,6 +45,20 @@ Maka dari itu kami membuat Aplikasi “Pembelian Buku” yang sangat berguna unt
 
 ## cara kerja program
 
+1.  Mulai 
+2.  Masukkan pilihan anda 1,2,3,4 atau 5
+3.  Pilihan 1 menunjukkan masuk ke antrian
+4.  Pilihan 2 menunjukkan cek daftar antrian 
+5.  Pilihan 3 menunjukkan beli buku
+6.  Pilihan 4 menunjukkan cek stok buku
+7.  Pilihan 5 menunjukkan tambah stok buku 
+8.  Jika kita memilih pilihan 1 maka kita harus menginputkan nama, no. telepon, dan e-mail
+9.  Jika kita sudah menginputkan pilihan tersebut, maka akan keluar keterangan data berhasil diinputkan
+10. Jika kita memilih pilihan 2 maka akan keluar keterangan jika kita sudah mendaftarkan antrian dari pilihan pertama 
+11. Jika kita memilih pilihan 5 maka akan keluar keterangan jumlah stok buku saat ini
+12. Jika kita memilih pilihan 4 maka akan keluar keterangan sisa stok buku yang sudah kita beli
+13. Jika kita memilih pilihan 3 maka kita akan masuk diarahkan melakukan pendaftaran di pilihan 1
+14. Selesai
 
 
 
