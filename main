@@ -51,6 +51,37 @@ int isEmptystack(){
 	}
 }
 
+void masuk(){
+	
+	struct node *pNew;
+
+   	pNew = (node *)malloc(sizeof(node));  	
+	nomorantrian++;
+	
+	fflush(stdin);
+    pNew->noantrian = nomorantrian;
+
+	fflush(stdin);
+	printf("NAMA          : ");
+	gets(pNew->nama);
+		
+	fflush(stdin);
+	printf("NO. TELEPON   : ");
+	gets(pNew->notlpn);
+
+	fflush(stdin);
+	printf("E-MAIL        : ");
+	gets(pNew->email);
+   
+    pNew->next = NULL;
+    if(isEmptyqueue()){
+		front = rear= pNew;
+	}else{
+		rear->next = pNew;
+		rear = pNew;	
+	}
+}
+
 void cekantrian (){
 	
 	struct node *pWalker;
@@ -177,6 +208,27 @@ void cekstok(){
 	}
 }
 
+int main()
+{
+	int select, pil;
+	
+	do{
+		system("cls");
+		
+		printf("=====================================================\n");
+		printf("|                    PEMBELIAN BUKU                  |\n");
+		printf("           >>> TEKAN '0' UNTUK KELUAR <<<\n");
+		printf("=====================================================\n");
+		printf("|1. MASUK KE ANTRIAN                                |\n");
+		printf("|2. CEK DAFTAR ANTRIAN                              |\n");
+		printf("|3. BELI BUKU                                       |\n");
+		printf("|4. CEK STOK BUKU                                   |\n");
+		printf("|5. TAMBAH STOK BUKU                                |\n");
+		printf("=====================================================\n");
+		printf("PILIHAN ANDA : ");
+		scanf("%d",&select);
+		system("cls");
+		
 if (select==0){
 			exit;
 		}else if(select==1){
