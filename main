@@ -32,3 +32,53 @@ int countstack(){
 	printf("----------------------------\n");
 	return count;
 }
+
+void ambilbuku (){
+	struct node *temp;
+	
+	temp = front;
+	front = front->next;
+	if(front == NULL){
+	rear = NULL;
+	}
+	free(temp);
+}
+
+int belibuku(){
+	struct node *temp;
+	int buku;
+	
+	if(isEmptystack()){
+		printf("\nSTOK HABIS!\n\n");
+		system("PAUSE");
+	} else if (isEmptyqueue()){
+		printf("\nMasuk Ke Antrian Dan Lakukan Pendaftaran Terlebih Dahulu\n\n");
+		system("PAUSE");
+	}else{
+		ambilbuku();
+		
+		temp = top;
+		buku = top->stok;
+		top = top->next;
+		free(temp);
+		temp = NULL;
+	}	
+	return buku;	
+}
+
+void cekstok(){
+	struct node *temp;
+	
+	if(isEmptystack()){
+		printf("\n\tSTOK KOSONG\n\n");
+	}else{
+		printf("\n");
+		temp = top;
+		while(temp != NULL){
+			printf("\t---------\n");
+			printf("\t|  \t|\n", temp->stok);
+			temp = temp->next;
+		}
+		printf("\t---------\n");
+	}
+}
