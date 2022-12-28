@@ -22,9 +22,11 @@ Aplikasi Pembelian Buku
 
 
 ## Latar Belakang Aplikasi Pembelian Buku
-   Final project yang kami kerjakan dengan judul “Aplikasi Pembelian Buku” Proses pembelian buku akan lebih nyaman jika semuanya sudah diatur jadi disini kami memberikan antrian agar dapat memudahkan saat pelanggan akan membeli buku dan dapat membantu meningkatkan kualitas layanan kepada masyarakat untuk menghindari terjadinya desak-desakkan ketika proses antrian untuk mendapatkan layanan yang terbaik. Oleh karena itu dibutuhkan sebuah sistem yang tidak memerlukan bantuan dari petugas untuk mengambil antrian pembelian buku dari para pengguna.
-   Maka dari itu kami membuat Aplikasi “Pembelian Buku” yang sangat berguna untuk memudahkan masyarakat yang ingin membeli buku bisa mendapatkan antrian agar tidak rusuh dan sesuai dengan urutan agar cepat, aman dan nyaman.
-   “Aplikasi Pembelian Buku “ yang kami buat menginplementasikan tipe Struktur Data Queue dan Stack. Dalam penulisan laporan final project ini, kami akan memberikan beberapa pengertian yang berhubungan dengan judul final project tersebut, karena tanpa pengertian yang jelas akan menyebabkan informasi yang disajikan tidak sesuai dengan hasil final project yang dipaparkan.
+Final project yang kami kerjakan dengan judul “Aplikasi Pembelian Buku” Proses pembelian buku akan lebih nyaman jika semuanya sudah diatur jadi disini kami memberikan antrian agar dapat memudahkan saat pelanggan akan membeli buku dan dapat membantu meningkatkan kualitas layanan kepada masyarakat untuk menghindari terjadinya desak-desakkan ketika proses antrian untuk mendapatkan layanan yang terbaik. Oleh karena itu dibutuhkan sebuah sistem yang tidak memerlukan bantuan dari petugas untuk mengambil antrian pembelian buku dari para pengguna.
+
+Maka dari itu kami membuat Aplikasi “Pembelian Buku” yang sangat berguna untuk memudahkan masyarakat yang ingin membeli buku bisa mendapatkan antrian agar tidak rusuh dan sesuai dengan urutan agar cepat, aman dan nyaman.
+
+“Aplikasi Pembelian Buku “ yang kami buat menginplementasikan tipe Struktur Data Queue dan Stack. Dalam penulisan laporan final project ini, kami akan memberikan beberapa pengertian yang berhubungan dengan judul final project tersebut, karena tanpa pengertian yang jelas akan menyebabkan informasi yang disajikan tidak sesuai dengan hasil final project yang dipaparkan.
 
 
 ## Tujuan Aplikasi Pembelian Buku
@@ -48,4 +50,4 @@ Aplikasi Pembelian Buku
 
 
 ## Penutup
-    Dari penjelasan diatas dapat kami simpulkan bahwa final project yang kami kerjakan mengikuti kaidah pemrograman bahasa C dengan mengimplementasikan tipe Struktur Data Queue dan Stack. Sekian laporan yang dapat kami sampaikan terkait final project mata kuliah pemrograman lanjut dengan judul “Pembelian Buku”. Dengan minimnya pengetahuan yang kami miliki dalam pembuatan laporan ini, sehingga kami mohon arahan untuk saran dan kesannya agar laporan ini dapat menjadi lebih baik lagi. Terima kasih. 
+Dari penjelasan diatas dapat kami simpulkan bahwa final project yang kami kerjakan mengikuti kaidah pemrograman bahasa C dengan mengimplementasikan tipe Struktur Data Queue dan Stack. Sekian laporan yang dapat kami sampaikan terkait final project mata kuliah pemrograman lanjut dengan judul “Pembelian Buku”. Dengan minimnya pengetahuan yang kami miliki dalam pembuatan laporan ini, sehingga kami mohon arahan untuk saran dan kesannya agar laporan ini dapat menjadi lebih baik lagi. Terima kasih. 
