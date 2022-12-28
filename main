@@ -51,6 +51,32 @@ int isEmptystack(){
 	}
 }
 
+void cekantrian (){
+	
+	struct node *pWalker;
+
+	printf("---------------- [ ANTRIAN SAAT INI ] ----------------\n\n\n");
+    if(isEmptyqueue()){
+        printf("                   ANTRIAN KOSOSNG \n");
+    } 
+    else{	
+		pWalker = front;
+        printf("                    DAFTAR ANTRIAN       \n");
+        printf("        ====================================\n");
+		
+        while(pWalker != NULL){
+    		printf("        ------------------------------------\n");
+			printf("        | Nomor Antrian : %d\n", pWalker->noantrian);
+			printf("        | Nama          : %s\n", pWalker->nama);
+			printf("        | No. Telepon   : %s\n", pWalker->notlpn);
+			printf("        | E - Mail      : %s\n", pWalker->email);		
+			printf("        ------------------------------------\n");        	
+            pWalker = pWalker->next;
+        }
+  		printf("\n");
+    } 
+} 
+
 int isFullstack(){
 	int pos;
 	pos = countstack();
