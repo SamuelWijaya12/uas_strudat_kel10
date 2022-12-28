@@ -120,6 +120,46 @@ int belibuku(){
 	return buku;	
 }
 
+void tambahstok (){
+	
+	struct node *pNew;
+	int buku;
+	
+	if(isFullstack()){
+		printf("STOK BUKU PENUH!\n\n");
+		system("PAUSE");
+	}else{	
+		while (countstack()<max){
+			buku++;
+			pNew = (struct node *)malloc(sizeof(struct node));			
+			pNew->stok = buku;
+			pNew->next = NULL;
+			pNew->next = top;
+			top = pNew;
+			system("cls");
+		}
+	}
+}
+
+int countqueue()
+{
+	int count = 0;
+	struct node *pPre;
+	pPre = front;
+	
+	while(pPre!=0)
+	{
+		count++;
+		pPre = pPre->next;
+	}
+	printf("\n----------------------------");
+	printf("\nTOTAL ANTRIAN SAAT INI : %d\n",count);
+	printf("----------------------------\n");
+	return count;
+}	
+//----------------------------------------------------------------------------------------
+
+
 void cekstok(){
 	struct node *temp;
 	
