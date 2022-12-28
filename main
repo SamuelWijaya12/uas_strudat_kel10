@@ -1,176 +1,34 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
-#include<unistd.h>
 #include<string.h>
-.
-..
+
+#define max 10
 
 struct node{
 	int noantrian;
+	char notlpn [20];
 	char nama[50];
-	char npm[50];
-	char fakultas[50];
-	char prodi[50];
+	char email[50];
+	int stok;
 	struct node *next;
-}; typedef node node;
+}*front = NULL, *rear = NULL, *top = NULL;
 
-int noantrian = 0;
+int nomorantrian = 0;
 
-void login(node **head){
-	
-	node *temp, *pNew;
-	
-	pNew = (node *)malloc(sizeof(node));
-	noantrian++;
-	
-	fflush(stdin);
-	pNew->noantrian = noantrian;
+int countqueue();
 
-	fflush(stdin);
-	printf("Nama : ");
-	gets(pNew->nama);
-	
-	fflush(stdin);	
-	printf("NPM: ");
-        gets(pNew->npm);     
-	
-	fflush(stdin);	
-    	printf("Fakultas : ");
-    	gets(pNew->fakultas);
-  
-  	fflush(stdin);
-    	printf("Program Studi : ");
-    	gets(pNew->prodi);
-
-    	pNew->next = NULL;
-    	if(*head == NULL){
-        	*head = pNew;
-    	}else{
-        	temp = *head;
-        	while(temp->next != NULL){
-        	    temp = temp->next;
-			}
-        	temp->next = pNew;
-    	}	
-}
-
-
-
-void daftarantrian(node *head){
-	
-	struct node *pWalker;
-	
-	pWalker = head;
-	system("cls");
-	printf("---------------- [ DAFTAR NAMA ANTRIAN ] ----------------\n\n\n");
-    if(head == NULL){
-        printf("                   ANTRIAN KOSOSNG						 \n");
-    } 
-    else{
-        printf("                    [DAFTAR ANTRIAN]      \n");
-        printf("        ====================================\n");
- 
-        while(pWalker != NULL){
-    		printf("        ------------------------------------\n");
-		printf("        | Nomor Antrian : %d\n", pWalker->noantrian);
-		printf("        | Nama            : %s\n", pWalker->nama);
-		printf("        | NPM             : %s\n", pWalker->npm);
-		printf("        | Fakultas        : %s\n", pWalker->fakultas);
-		printf("        | Program Studi   : %s\n", pWalker->prodi);
-		printf("        ------------------------------------\n");        	
-            pWalker = pWalker->next;
-        }
-    }
-} 
-
-void ambilbuku (){
+int countstack(){
 	struct node *temp;
-	
-	temp = front;
-	front = front->next;
-	if(front == NULL){
-	rear = NULL;
-	}
-	free(temp);
-}
-
-int belibuku(){
-	struct node *temp;
-	int buku;
-	
-	if(isEmptystack()){
-		printf("\nSTOK HABIS!\n\n");
-		system("PAUSE");
-	} else if (isEmptyqueue()){
-		printf("\nMasuk Ke Antrian Dan Lakukan Pendaftaran Terlebih Dahulu\n\n");
-		system("PAUSE");
-	}else{
-		ambilbuku();
-		
-		temp = top;
-		buku = top->stok;
-		top = top->next;
-		free(temp);
-		temp = NULL;
-	}	
-	return buku;	
-}
-
-int count(struct node *head)
-{
 	int count = 0;
-	struct node *pPre;
-	pPre = head;
 	
-	while(pPre!=0)
-	{
+	temp = top;
+	while(temp != 0){
 		count++;
-		pPre = pPre->next;
+		temp = temp->next;
 	}
 	printf("\n----------------------------");
-	printf("\nTOTAL ANTRIAN SAAT INI : %d\n",count);
+	printf("\n STOK BUKU SAAT INI : %d \n",count);
 	printf("----------------------------\n");
 	return count;
-}	
-
-
-int main()
-{
-	node *head = NULL;
-	int select;
-	
-	do{
-		system("cls");
-		
-		printf("=====================================================\n");
-		printf("|               PENGAMBILAN KTM MAHASISWA           |\n");
-		printf("=====================================================\n");
-		printf("|1. Masuk Antrian Pengambilan KTM                   |\n");
-		printf("|2. Masuk Ruangan Pengambilan KTM                   |\n");
-		printf("|3. Keluar Ruangan Pengambilan KTM                  |\n"); 
-		printf("|3. KELUAR                                          |\n");
-		printf("=====================================================\n");
-		printf("PILIHAN ANDA : ");
-		scanf("%d",&select);
-		
-		system("cls");	
-		if (select==1){
-			login(&head);
-			system("cls");
-			system("PAUSE");
-			printf("Data Berhasil di Inputkan");
-		}else if(select==2){
-			daftarantrian(head);
-			system("PAUSE");
-		}else if(select==3){
-			printf("\n");
-			exit(0);
-			
-		}
-		else{
-			printf("\nERR : PILIHAN TIDAK DITEMUKAN\n");
-			system("PAUSE");		
-		}
-	}while(select!=3);
 }
